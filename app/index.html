@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Basic Chat Application</title>
+        <meta name="description" content="Basic Chat Application" />
+        <link rel="stylesheet" href="./index.css" />
+    </head>
+    <body>
+        <div id="wrapper">
+            <div id="menu">
+                <p class="welcome">Welcome<b></b></p>
+            </div>
+            <div id="chatbox"></div>
+            <form name="message" id="send-container">
+                <input name="usermsg" id="messageInp" type="text"/>
+                <input name="submitmsg" type="submit" id="submitmsg" value="Send" />
+            </form>
+        </div>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script type="text/javascript" src="./javas/client.js"></script>
+        <script src="http://localhost:8000/socket.io/socket.io.js"></script>
+    </body>
+</html>
